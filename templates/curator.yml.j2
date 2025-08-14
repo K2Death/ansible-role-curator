@@ -5,20 +5,26 @@ elasticsearch:
   client:
     hosts: {{ curator_hosts | to_json }}
     cloud_id: {{ curator_cloud_id }}
+    bearer_auth: {{ curator_bearer_auth }}
+    opaque_id: {{ curator_opaque_id }}
+    request_timeout: {{ curator_request_timeout }}
+    http_compress: {{ curator_http_compress }}
+    verify_certs: {{ curator_verify_certs }}
     ca_certs: {{ curator_ca_certs }}
     client_cert: {{ curator_client_cert }}
     client_key: {{ curator_client_key }}
-    verify_certs: {{ curator_verify_certs }}
-    request_timeout: {{ curator_request_timeout }}
+    ssl_assert_hostname: {{ curator_ssl_assert_hostname }}
+    ssl_assert_fingerprint: {{ curator_ssl_assert_fingerprint }}
+    ssl_version: {{ curator_ssl_version }}
   other_settings:
     master_only: {{ curator_master_only }}
+    skip_version_test: {{ curator_skip_version_test }}
     username: {{ curator_username }}
     password: {{ curator_password }}
 {% if curator_api_key %}
     api_key: {{ curator_api_key }}
       id: {{ curator_api_key_id }}
       api_key: {{ curator_api_key_api_key }}
-      token: {{ curator_api_key_token }}
 {% endif %}
 
 logging:

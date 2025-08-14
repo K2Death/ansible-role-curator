@@ -1,8 +1,7 @@
 ---
 galaxy_info:
   role_name: curator
-  namespace: boutetnico
-  author: Nicolas Boutet
+  author: Kevin WAGET
   description: Install and configure curator.
   license: MIT
   min_ansible_version: "2.10"

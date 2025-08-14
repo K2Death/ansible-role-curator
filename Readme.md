@@ -1,5 +1,3 @@
-[![tests](https://github.com/boutetnico/ansible-role-curator/workflows/Test%20ansible%20role/badge.svg)](https://github.com/boutetnico/ansible-role-curator/actions?query=workflow%3A%22Test+ansible+role%22)
-[![Ansible Galaxy](https://img.shields.io/badge/galaxy-boutetnico.curator-blue.svg)](https://galaxy.ansible.com/boutetnico/curator)
 
 ansible-role-curator
 ====================
@@ -160,4 +158,6 @@ MIT
 Author Information
 ------------------
 
-[@boutetnico](https://github.com/boutetnico)
+Fork by Kevin WAGET
+
+Source : [@boutetnico](https://github.com/boutetnico)

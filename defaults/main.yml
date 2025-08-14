@@ -2,24 +2,30 @@
 curator_package: elasticsearch-curator
 curator_package_version: 8.0.21
 
-curator_hosts:
-  - http://127.0.0.1:9200
+curator_hosts: ""
 curator_cloud_id: ""
+curator_bearer_auth: ""
+curator_opaque_id: ""
+curator_request_timeout: 30
+curator_http_compress: false
+curator_verify_certs: true
 curator_ca_certs: ""
 curator_client_cert: ""
 curator_client_key: ""
-curator_verify_certs: true
-curator_request_timeout: 30
+curator_ssl_assert_hostname: ""
+curator_ssl_assert_fingerprint: ""
+curator_ssl_version: ""
+
 curator_master_only: false
+curator_skip_version_test: ""
 curator_username: ""
 curator_password: ""
 curator_api_key: ""
 curator_api_key_id: ""
 curator_api_key_api_key: ""
-curator_api_key_token: ""
 
-curator_log_file: ""
 curator_log_level: INFO
+curator_log_file: "/var/log/curator/curator.log"
 curator_log_format: default
 curator_log_blacklist:
   - elastic_transport
